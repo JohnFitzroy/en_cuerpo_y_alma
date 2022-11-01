@@ -358,7 +358,7 @@ input.src:hover{
     position: relative;
     width: 15rem; /*TAMAÑO IMAGEN*/
     height: 15rem; /*TAMAÑO IMAGEN*/
-    background: url("") no-repeat 100% 50%;
+    background: url("../Assets/Img/Menu/Badges/Badge-Entradas.jpg") no-repeat 100% 50%;
     background-size: 120%;/*ZOOM IMAGEN*/
     border-radius: 50%;
     transition: all 0.5s cubic-bezier (0.55, 0, 0.1, 1);
