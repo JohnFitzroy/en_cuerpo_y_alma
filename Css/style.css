@@ -1007,10 +1007,14 @@ ul li a:before {
 }
 
 /*Mobile*/
-@media screen and (max-width:480px) {
+@media screen and (max-width:393px) {
+    .h1Productos {
+        font-size: 45px;
+    }
+
     .badges1, .badges2 {
         flex-direction: column;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .badgePasta, .badgeTortas, .badgeEspeciales {
@@ -1021,25 +1025,25 @@ ul li a:before {
     .Mediosdepago {
         display: flex;
         flex-direction: row;
-        margin: 10px 10px -20px 170px;
+        margin: 10px 10px -20px 128px;
     }
 
     .Imagenesdepago {
         display: flex;
         flex-direction: row;
-        margin: 10px 10px -10px 175px;
+        margin: 10px 10px -10px 143px;
     }
 
     .Nr {
         display: flex;
         flex-direction: row;
-        margin: 10px 145px -15px -140px;
+        margin: 10px 100px -15px 100px;
     }
 
     .queriesUl {
         display: flex;
         flex-direction: row;
-        margin: 0px 150px 10px -140px;
+        margin: 0px 100px 10px 100px;
     }
 
 }
