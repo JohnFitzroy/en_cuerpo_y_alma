@@ -1,0 +1,1004 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Body, h1, a, p, h2, h3,*//* Formuladrio(form, label)*/
+body {
+    background-color: #ffffff;
+}
+
+h1{
+    /* Fuente*/
+    font-family: 'Oooh Baby', cursive;
+    /*Tamaño fuente*/
+    font-size: 50px;
+    /*Centrar fuente*/
+    text-align: center;
+}
+
+/*Color delos enlaces*/
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.Linkrrss {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/*Fuente*/
+p , h2, h3, form, label{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Header*/
+#Logo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d8af97;
+}
+
+#HeaderProduct { /*Cambios en la seccion prodcutos*/
+    display: flex;
+    justify-content: space-around;
+}
+
+/*TAMAÑO DEL LOGO*/
+.Logo {
+    width: 150px;
+    height: 150px;
+}
+
+/*Carrito*/
+#shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Menu de navegacion*/
+.menuNav {
+	margin: 0 auto 5px;
+    position: relative;
+	width: 440px;/*largo del fondo
+	gris en este caso*/
+	height: 50px; /*Ancho*/
+	background-color: #34495e;
+	border-radius: 50px;/*Radio del Nav*/
+	font-size: 0;
+}
+
+.menuNav li, .enlacesNav {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 50px; /*Radio del efecto*/
+}
+
+li:nth-child(1) {
+	left: -20px; /*Posicion de las letras*/
+}
+
+li:nth-child(2) {
+	width: 90px;
+}
+
+li:nth-child(3) {
+	width: 130px;
+}
+
+li:nth-child(4) {
+	width: 90px;
+}
+
+nav .start-home, li:nth-child(1):hover~.animation {
+	width: 110px;/*Tamaño del del hover para efeto*/
+	left: 0;
+	background-color: #a87e57;
+}
+
+nav .start-about, li:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 110px;
+	background-color: #a87e57;
+}
+
+nav .start-blog, li:nth-child(3):hover~.animation {
+	width: 110px;
+	left: 220px;
+	background-color: #a87e57;
+}
+
+nav .start-portefolio, li:nth-child(4):hover~.animation {
+	width: 110px;
+	left: 330px;
+	background-color: #a87e57;
+}
+
+/*Seccion Nosotros*/
+:root {
+    --secondary-color: #ebcfce;
+    --contrast-color: #ebcfce;/* #ffffff */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10; 
+    background-color: var(--contrast-color);
+}
+
+.container {
+    display: flex;
+    height: 100vh; /*Tamaño del fondo rosa*/
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    animation: expand .8s ease forwards;
+    background-color: var(--secondary-color);
+    position: relative;
+    transition: all .8s ease;
+}
+
+.container_content {
+    width: 50%;
+}
+
+.container_content_inner {
+    width: 80%;
+    margin-left: 80px;
+}
+
+.container_outer_img {
+    margin: 50px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.container_img {
+    width: 100%;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+    height: auto;
+    overflow: hidden;
+}
+
+.text-AboutUs{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 28px;
+    transform: translateY(300px);
+    animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.title {
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+
+.h1-AboutUs {
+        /* Fuente*/
+        font-family: 'Oooh Baby', cursive;
+        font-size: 40px;
+        color: black;
+        margin-bottom: 20px;
+        transform: translateY(100px);
+        animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(500px) scale(.2);
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(1400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*Carrusel*/
+.carousel-fade {
+    margin-left: 130px;
+    margin-top: -4.6px;/*Tope Maximo del margen de separacion de la imagen de fondo con el nav*/
+}
+
+/*SECCION PRODUCTOS*/
+.h1Productos {
+    color: white;
+    padding: 20px;
+}
+
+/*BUSCADOR*/
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #ac0005;
+    background: #fff url("../assets/Img/Iconos/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 60px;
+    transition: all .5s;
+}
+
+input.src:hover{
+    width: 180px;
+    background-color: #fff;
+    border-color:  #753228;
+    box-shadow: 0 0 5px #6dcff680;
+    cursor: pointer;
+}
+
+/*Fondo de productos*/
+.fondoMenu {
+    background-image: url("../Assets/Img/Fondos/fondo_productos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -4.6px;/*Tope Maximo del margen de separacion de la imagen de fondo con el nav*/
+}
+
+/*Seccion Productos*/
+.badges1 { /* aqui centre los productos uno al lado del otro */
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;/*Espacio entre medido bajo de las badges*/
+}
+
+.badges2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;/*Espacio entre las badges y el footer*/
+}
+
+/*Caja de productos*/
+
+.seccionProdcutos .containerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.seccionProdcutos .containerBox .Box {
+    flex: 1 1 30rem; /*Para la separacion entre boxes*/
+    margin: 1rem;
+    padding: 1rem;
+    background-color:lightpink;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 5px; /*Ajustar mas adelante*/
+    text-align: center;
+    padding-bottom: 3rem; /*Tamaño del box abajo*/
+}
+
+.seccionProdcutos .containerBox .Box:nth-child(2), .seccionProdcutos .containerBox .Box:hover {
+    border: .2rem solid blue; /*color al pasar el cursor por la caja*/
+}
+
+.seccionProdcutos .containerBox .Box .nombreProducto {
+    font-size: 25px;
+    color: #00796a; /*Si llega a necesitar*/
+    padding-top: 1rem;/*Separacion entre el nombre y la imagen*/
+}
+
+.seccionProdcutos .containerBox .Box .Precio {
+    font-size: 12.5px;
+    color:darkblue; /*Si llega a necesitar*/
+    padding: 10px 0;/*Separaion del nombre del producto y el precio*/
+}
+
+.seccionProdcutos .containerBox .Box .Precio span {
+    color: darkcyan;
+}
+
+.seccionProdcutos .containerBox .Box .Precio .Descripcion {
+    padding: 10px 0;
+}
+
+/*CATEGORIA ENTRADAS*/
+.badgeEntradas {
+    display: block;
+    position: relative;
+    width: 15rem; /*TAMAÑO IMAGEN*/
+    height: 15rem; /*TAMAÑO IMAGEN*/
+    background: url("") no-repeat 100% 50%;
+    background-size: 120%;/*ZOOM IMAGEN*/
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier (0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+    
+}
+
+.badgeEntradas:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+
+.badgeEntradas:hover .textEntradas {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+    width: 15rem;
+    letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+    line-height: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badgeEntradas .textEntradas {
+    display: block;
+    position:absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;/*CENTRAR EL TEXTO DEL CIRCULO*/
+    left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    margin-top: -10rem;
+    margin-left: -10rem;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+
+/*CATEGORIA PASTA*/
+.badgePasta {
+    display: block;
+    position: relative;
+    width: 15rem; /*TAMAÑO IMAGEN*/
+    height: 15rem; /*TAMAÑO IMAGEN*/
+    background: url("../Assets/Img/Menu/Badges/Badge-Sorrentino.jpg") no-repeat 100% 50%;
+    background-size: 124%;/*ZOOM IMAGEN*/
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+
+.badgePasta:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+
+.badgePasta:hover .textPastas {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+    width: 15rem;
+    letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+    line-height: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badgePasta .textPastas {
+    display: block;
+    position:absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;/*CENTRAR EL TEXTO DEL CIRCULO*/
+    left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    margin-top: -10rem;
+    margin-left: -10rem;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/*CATEGORIA TORTAS*/
+.badgeTortas {
+    display: block;
+    position: relative;
+    width: 15rem; /*TAMAÑO IMAGEN*/
+    height: 15rem; /*TAMAÑO IMAGEN*/
+    background: url("../Assets/Img/Menu/Badges/Badge-Torta.jpg") no-repeat 100% 50%;
+    background-size: 120%;/*ZOOM IMAGEN*/
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+
+.badgeTortas:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+
+.badgeTortas:hover .textTortas {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+    width: 15rem;
+    letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+    line-height: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badgeTortas .textTortas {
+    display: block;
+    position:absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;/*CENTRAR EL TEXTO DEL CIRCULO*/
+    left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    margin-top: -10rem;
+    margin-left: -10rem;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/*CATEGORIA POSTRES*/
+.badgePostres {
+    display: block;
+    position: relative;
+    width: 15rem; /*TAMAÑO IMAGEN*/
+    height: 15rem; /*TAMAÑO IMAGEN*/
+    background: url("../Assets/Img/Menu/Badges/Badge-Postres.jpg") no-repeat 100% 50%;
+    background-size: 120%;/*ZOOM IMAGEN*/
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+
+.badgePostres:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+
+.badgePostres:hover .textPostres {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+    width: 15rem;
+    letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+    line-height: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badgePostres .textPostres {
+    display: block;
+    position:absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;/*CENTRAR EL TEXTO DEL CIRCULO*/
+    left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    margin-top: -10rem;
+    margin-left: -10rem;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/*CATEGORIA ESPECIALES*/
+.badgeEspeciales {
+    display: block;
+    position: relative;
+    width: 15rem; /*TAMAÑO IMAGEN*/
+    height: 15rem; /*TAMAÑO IMAGEN*/
+    background: url("../Assets/Img/Menu/Badges/Badge-Especiales.jpg") no-repeat 100% 50%;
+    background-size: 137%;/*ZOOM IMAGEN*/
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+
+.badgeEspeciales:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+
+.badgeEspeciales:hover .textEspeciales {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+    width: 15rem;
+    letter-spacing: 8px; /*ESPACIO ENTRE LETRAS*/
+    line-height: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badgeEspeciales .textEspeciales {
+    display: block;
+    position:absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;/*CENTRAR EL TEXTO DEL CIRCULO*/
+    left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+    margin-top: -10rem;
+    margin-left: -10rem;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/*FORMULARIOS*/
+form {
+    width: 460px;
+    /*PARA CENTRA EL FORMULARIO*/
+    margin: auto;
+    /*PARA DARLE TRANSPARENCIA CON EL FONDO*/
+    background: rgba(0, 0, 0, 0.4);
+/*MEDIDAS DEL BOX*/
+    padding: 10px 20px;
+    /**/
+    box-sizing: border-box;
+    /*PARDA DARLE UN MARGEN ARRIBA DEL FORMULARIO*/
+    margin-top: 20PX;
+    /*PARA HACER LOS BORDES REDONDEADOS*/
+    border-radius: 20px; /*7,10 o 15*/
+}
+
+.h2-contacto {
+    color: white;
+    /*CENTRAR EL TEXTO*/
+    text-align: center;
+    /*PARA QUITAR EL MARGEN*/
+    margin: 0;
+    /*TAMAÑO DE LA FUENTE*/
+    font-size: 30px;
+    /*PARA DARLE UN MARGEN ABAJO*/
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input, textarea {
+    /*PARA QUE CUBRA TODO EL BOX*/
+    width: 100%;
+    /*SEPARACION ENTRE INPUT*/
+    margin-bottom: 5px;
+    /**/
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 7px; 
+}
+
+textarea {
+    /*PARA HACER UN TOPE DEL LABEL*/
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+/*SECCION OPINIONES*/
+
+.fondoOpiniones {
+    background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -4.6px;
+}
+
+.h2-oponiones {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/*Oponion de clientes*/
+:root {
+    --ewc-color-1: #ffffff;/*Blanco*/
+    --ewc-color-2: #eae1da;/*Fondo chat*/
+    --ewc-color-4: #00796a;/*Fondo nombre y enviar*/
+}
+
+.ewChat {
+    position:sticky;
+    bottom: 15px;
+    right: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    max-width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 11;
+}
+
+.ewChatBox {
+    width: 100%;
+    background-color: var(--ewc-color-2);
+    border-radius: 15px;
+    display: flex;
+    transition: opacity 1000ms;
+    flex-direction: column;
+}
+
+.ewChatAvatar {
+    left: calc(50% - 32px);
+    top: -80px;
+    width: 59px;
+    height: 59px;
+    padding: 3px;
+    border-radius: 100%;
+    background-color: var(--ewc-color-1);
+    display: flex;
+}
+
+.Opinions {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;/*Espacio entre medido bajo de las badges*/
+}
+
+/*Centrar el Avatar*/
+.ewChatAvatar img {
+    margin: 2px 4px 5px;
+}
+
+.ewChatAvatar .Silvio {
+    margin: 2px 15px 5px 5px;
+}
+
+.ewChatAvatar .Christian {
+    margin: 2px 5px;
+}
+
+.ewChatAvatar .Micaela {
+    margin: 0px 10px 5px 1px;
+}
+
+.ewChatAvatar .JoseG {
+    margin: 2px 17px 5px 5px;
+}
+
+.ewChatAvatar .Ganesha {
+    margin: 0px 10px 5px 1px;
+}
+
+.ewChatAvatar .Francia {
+    margin: 2px 7px 5px 5px;
+}
+
+.ewChatAvatar .Andreina {
+    margin: 0px 5px 2px 0px;
+}
+
+.ewChatAvatar .Jose {
+    margin: 2px 15px 2px 3px;
+}
+
+.ewChatAvatar .Luis {
+    margin: 2px 12px 2px 5px;
+}
+
+.ewChatAvatar .Fabiana {
+    margin: 1px 1px 1px 0px;
+}
+
+.ewChatAvatar .Cristiana {
+    margin: 2px 10px 1px 5px;
+
+}
+
+.ewChatHeader {
+    background-color: var(--ewc-color-4);
+    color: var(--ewc-color-1);
+    border-radius: 15px 15px 0 0;
+    padding: 5px;/*Tamaño del fondo verde*/
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.ewChatHeader h3 {
+    font-size: 18px;
+    margin: 3px;
+}
+
+.ewChatHeader p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.ewChatBubble {
+    background-color: var(--ewc-color-1);
+    margin: 10px 18px 10px 30px;
+    padding: 9px 9px 25px 9px;
+    text-align: left;
+    border-radius: 0 10px 10px 10px;
+    position: relative;
+    transition: opacity 1000ms;
+}
+
+.ewChatBubble:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: var(--ewc-color-1);
+    border-left: 0;
+    border-top: 0;
+    margin-top: 0;
+    margin-left: -15px;
+}
+
+.ewChatBubble p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.ewChatBubble span {
+    position: absolute;
+    bottom: 5px;
+    right: 9px;
+    opacity: 0.5;
+    font-size: 11px;
+}
+
+.ewChatInput {
+    display: flex;
+    transition: opacity 1000ms;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--ewc-color-1);
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid black; /*Quitar despues que coloque fondo*/
+    border-width: thin; /*Quitar despues que coloque fondo*/
+}
+
+.ewChatInput input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--ewc-color-1);
+    height: 32px;
+    margin: auto 20px;
+    width: 100%;
+    border: none;
+}
+
+.ewChatInput input:focus {
+    outline: none;
+}
+
+.ewChatInput button {
+    border: none;
+    background-color: var(--ewc-color-4);
+    border-radius: 20px;
+    margin: 4px;
+    color: var(--ewc-color-1);
+    padding: 8px;
+}
+
+/*CLASIFICACION*/
+/*COLOR DE FONDO DE LAS ESTRELLAS
+div label {
+    color: #343434;
+}
+
+/*QUITAR EL PUNTO DEL RADIO
+input[type="radio"] {
+    display: none;
+
+}
+
+/*SE VEAN NARANJA LAS ESTRELLAS
+div label:hover,
+div label:hover ~ label {
+    color: orange;
+}
+
+/*PARA QUE LAS ESTRELLAS MANTANGAN EL COLOR
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
+/*Input de todos los formularios*/
+input {
+    display: block;
+}
+
+/*Footer*/
+#Pie {
+    background-color: #d8af97;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+
+}
+/*Medios de pago*/
+
+.Mediosdepago {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.Imagenesdepago {
+    display: flex;
+}
+
+.Efectivo {
+    margin: 0 5px 0 20px;
+}
+
+.Mercadopago {
+    margin: 5px;
+}
+
+
+/*Redes Sociales*/
+.Nr {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+#rrss ul{ /*Aqui fue lo que modifique para centrar las redes*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#rrss ul li {
+    list-style: none;
+}
+
+#rrss ul li a {
+    width: 40px;/*Tamaño de los circulos*/
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 33px; /*Posicion de la imagen*/
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+#rrss ul li a .rrss {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+#rrss ul li a:hover .rrss {
+    transform: rotateY(360deg);
+    
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+
+#rrss ul li a:hover:before {
+    top: 0;
+}
+
+/*Fondo boton Instagram*/
+#rrss ul li:nth-child(1) a:before{
+    background-image: url("../Assets/Img/Fondos/fondoInstagram.png");
+}
+
+/*Fondo boton whatsapp*/
+#rrss ul li:nth-child(2) a:before{
+    background: #25D366;
+}
+
+/*Copyright*/
+.Copyright {
+    text-align: center;
+}
+
