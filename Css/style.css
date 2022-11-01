@@ -45,6 +45,13 @@ p , h2, h3, form, label{
     justify-content: space-around;
 }
 
+/*Usuario*/
+    .Account, .Shop {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
 /*TAMAÑO DEL LOGO*/
 .Logo {
     width: 150px;
@@ -52,11 +59,6 @@ p , h2, h3, form, label{
 }
 
 /*Carrito*/
-#shop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /*Menu de navegacion*/
 .navbar-nav {
