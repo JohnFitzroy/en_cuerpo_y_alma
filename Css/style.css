@@ -59,7 +59,7 @@ p , h2, h3, form, label{
 }
 
 /*Menu de navegacion*/
-.menuNav {
+.navbar-nav {
 	margin: 0 auto 5px;
     position: relative;
 	width: 440px;/*largo del fondo
@@ -68,9 +68,10 @@ p , h2, h3, form, label{
 	background-color: #34495e;
 	border-radius: 50px;/*Radio del Nav*/
 	font-size: 0;
+    margin-top: -7.6px;
 }
 
-.menuNav li, .enlacesNav {
+.navbar-nav li, .enlacesNav {
 	line-height: 50px;
 	height: 100%;
 	font-size: 15px;
@@ -84,7 +85,6 @@ p , h2, h3, form, label{
 	cursor: pointer;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 nav .animation {
