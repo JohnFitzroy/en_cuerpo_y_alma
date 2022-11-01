@@ -253,9 +253,9 @@ nav .start-portefolio, li:nth-child(4):hover~.animation {
     padding: 20px;
 }
 
-/*BUSCADOR*/
+/*BUSCADOR*//*DESACTIVAR CUANDO ESTE LISTO*/
 
-.box {
+/*.box {
     display: flex;
     flex-direction: row;
     justify-content:baseline;
@@ -284,10 +284,11 @@ input.src:hover{
     border-color:  #753228;
     box-shadow: 0 0 5px #6dcff680;
     cursor: pointer;
-}
+}*/
 
 /*Fondo de productos*/
 .fondoMenu {
+    
     background-image: url("../Assets/Img/Fondos/fondo_productos.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -897,6 +898,8 @@ input {
 
 /*Footer*/
 #Pie {
+    display: flex;
+    flex-direction: column;
     background-color: #d8af97;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -1003,3 +1006,40 @@ ul li a:before {
     text-align: center;
 }
 
+/*Mobile*/
+@media screen and (max-width:480px) {
+    .badges1, .badges2 {
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+    .badgePasta, .badgeTortas, .badgeEspeciales {
+        margin-top: 25px;
+    }
+
+
+    .Mediosdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px -20px 170px;
+    }
+
+    .Imagenesdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px -10px 175px;
+    }
+
+    .Nr {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 145px -15px -140px;
+    }
+
+    .queriesUl {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 150px 10px -140px;
+    }
+
+}
