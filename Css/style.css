@@ -578,7 +578,6 @@ textarea {
     background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -4.6px;
 }
 
 .h2-oponiones {
@@ -959,11 +958,6 @@ ul li a:before {
     }
 
 /*Queries Opiniones*/
-
-    .h1Opiniones {
-        font-size: 45px;
-        margin-top: 10px;
-    }
 
     .Opinions {
         flex-direction: column;
