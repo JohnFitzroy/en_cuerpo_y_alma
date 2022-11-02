@@ -1008,6 +1008,8 @@ ul li a:before {
 
 /*Mobile*/
 @media screen and (min-width:0px) and (max-width: 576px) {
+    
+    /*Queries Productos*/
     .h1Productos {
         font-size: 45px;
     }
@@ -1046,4 +1048,19 @@ ul li a:before {
         margin: 0px 100px 10px 100px;
     }
 
+/*Queries Opiniones*/
+
+    .h1Opiniones {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .Opinions {
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    #universalQuerys {
+        margin-top: 25px;
+    }
 }
