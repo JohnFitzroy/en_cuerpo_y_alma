@@ -905,7 +905,7 @@ ul li a:before {
 }
 
 /*Mobile*/
-@media screen and (min-width:0px) and (max-width: 576px) {
+@media screen and (min-width: 0px) and (max-width: 576px) {
     
     /*Queries Productos*/
     .h1Productos {
@@ -956,4 +956,19 @@ ul li a:before {
     #universalQuerys {
         margin-top: 25px;
     }
+}
+
+/*Queries para Desktop*/
+@media screen and (max-width: 1366px) {
+    .Mediosdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px 0 50px;
+    }
+
+    .Imagenesdepago {
+        display: flex;
+        flex-direction: row;
+        margin-left: 55px;
+}
 }
