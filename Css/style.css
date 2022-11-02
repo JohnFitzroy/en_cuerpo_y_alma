@@ -34,110 +34,21 @@ p , h2, h3, form, label{
 }
 
 /*Header*/
-#Logo {
-    display: flex;
-    justify-content: space-around;
-    background-color: #d8af97;
+.navbar {
+    background-color: #d8af97;;
 }
 
-#HeaderProduct { /*Cambios en la seccion prodcutos*/
-    display: flex;
-    justify-content: space-around;
+.nav-link {
+    color: black;
 }
 
-/*Usuario*/
-    .Account, .Shop {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-
-/*TAMAÑO DEL LOGO*/
-.Logo {
-    width: 150px;
-    height: 150px;
+.nav-link {
+    margin: 20px 20px 20px 20px;
 }
 
-/*Carrito*/
-
-/*Menu de navegacion*/
-.navbar-nav {
-	margin: 0 auto 5px;
-    position: relative;
-	width: 440px;/*largo del fondo
-	gris en este caso*/
-	height: 50px; /*Ancho*/
-	background-color: #34495e;
-	border-radius: 50px;/*Radio del Nav*/
-	font-size: 0;
-    margin-top: -7.6px;
+.Img {
+    margin-left: 20px;
 }
-
-.navbar-nav li, .enlacesNav {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 50px; /*Radio del efecto*/
-}
-
-li:nth-child(1) {
-	left: -20px; /*Posicion de las letras*/
-}
-
-li:nth-child(2) {
-	width: 90px;
-}
-
-li:nth-child(3) {
-	width: 130px;
-}
-
-li:nth-child(4) {
-	width: 90px;
-}
-
-nav .start-home, li:nth-child(1):hover~.animation {
-	width: 110px;/*Tamaño del del hover para efeto*/
-	left: 0;
-	background-color: #a87e57;
-}
-
-nav .start-about, li:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 110px;
-	background-color: #a87e57;
-}
-
-nav .start-blog, li:nth-child(3):hover~.animation {
-	width: 110px;
-	left: 220px;
-	background-color: #a87e57;
-}
-
-nav .start-portefolio, li:nth-child(4):hover~.animation {
-	width: 110px;
-	left: 330px;
-	background-color: #a87e57;
-}
-
 /*Seccion Nosotros*/
 :root {
     --secondary-color: #ebcfce;
@@ -244,7 +155,7 @@ nav .start-portefolio, li:nth-child(4):hover~.animation {
 
 /*Carrusel*/
 .carousel-fade {
-    margin-top: -13px;/*Tope Maximo del margen de separacion de la imagen de fondo con el nav*/
+    margin-left: 170px;
 }
 
 /*SECCION PRODUCTOS*/
@@ -292,7 +203,6 @@ input.src:hover{
     background-image: url("../Assets/Img/Fondos/fondo_productos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -4.6px;/*Tope Maximo del margen de separacion de la imagen de fondo con el nav*/
 }
 
 /*Seccion Productos*/
@@ -1033,7 +943,7 @@ ul li a:before {
     .Imagenesdepago {
         display: flex;
         flex-direction: row;
-        margin: 10px 10px -10px 143px;
+        margin: 10px 100px -10px 130px;
     }
 
     .Nr {
@@ -1045,7 +955,7 @@ ul li a:before {
     .queriesUl {
         display: flex;
         flex-direction: row;
-        margin: 0px 100px 10px 100px;
+        margin: 0 140px 10px 100px;
     }
 
 /*Queries Opiniones*/
