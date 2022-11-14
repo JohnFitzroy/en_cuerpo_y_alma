@@ -1,0 +1,68 @@
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    
+    /*Queries Productos*/
+    .h1Productos {
+        font-size: 45px;
+    }
+
+    .badges1, .badges2 {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .badgePasta, .badgeTortas, .badgeEspeciales {
+        margin-top: 25px;
+    }
+
+
+    .Mediosdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px -20px 128px;
+    }
+
+    .Imagenesdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 100px -10px 130px;
+    }
+
+    .Nr {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 100px -15px 100px;
+    }
+
+    .queriesUl {
+        display: flex;
+        flex-direction: row;
+        margin: 0 140px 10px 100px;
+    }
+
+/*Queries Opiniones*/
+
+    .Opinions {
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    #universalQuerys {
+        margin-top: 25px;
+    }
+}
+
+/*Queries para Desktop*/
+@media screen and (max-width: 1366px) {
+    .Mediosdepago {
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px 0 50px;
+    }
+
+    .Imagenesdepago {
+        display: flex;
+        flex-direction: row;
+        margin-left: 55px;
+}
+}

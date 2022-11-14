@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Body, h1, a, p, h2, h3,*//* Formuladrio(form, label)*/
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    /* Fuente*/
+    font-family: 'Oooh Baby', cursive;
+    /*Tamaño fuente*/
+    font-size: 50px;
+    /*Centrar fuente*/
+    text-align: center;
+}
+
+/*Color delos enlaces*/
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Fuente*/
+p , h2, h3, form, label{
+    font-family: 'Josefin Sans', sans-serif;
+}
