@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Colors*/
+/*background-color*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 
 /*Body, h1, a, p, h2, h3,*/ /* Formuladrio(form, label)*/
 body {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 h1 {
@@ -21,7 +23,41 @@ h1 {
 /*Color delos enlaces*/
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
+}
+
+/*Fuente*/
+p, h2, h3, form, label {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*Colors*/
+/*background-color*/
+/*Colors*/
+/*background-color*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Body, h1, a, p, h2, h3,*/ /* Formuladrio(form, label)*/
+body {
+  background-color: white;
+}
+
+h1 {
+  /* Fuente*/
+  font-family: "Oooh Baby", cursive;
+  /*Tamaño fuente*/
+  font-size: 50px;
+  /*Centrar fuente*/
+  text-align: center;
+}
+
+/*Color delos enlaces*/
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /*Fuente*/
@@ -40,478 +76,9 @@ p, h2, h3, form, label {
   color: black;
 }
 
-/*Centrar fuente*/
-/*position*/
-/*align-items*/
-/*justify-content*/
-/*overflow*/
-/*Medidas*/
-/*Font-size*/
-/*Height*/
-/*Width*/
-/*Margin-left*/
-/*Margin-bottom*/
-/*Line-height*/
-/*Top*/
-/*Left*/
-/*Right*/
-/*Bottom*/
-/*Colores*/
-/*background-color*/
-/*Margenes*/
-/*z-index*/
-/*Seccion Nosotros*/
-:root {
-  --secondary-color: #ebcfce;
-  --contrast-color: #ebcfce; /* #ffffff */
-}
-
-.bg-nosotros {
-  background-color: var(--secondary-color);
-}
-
-.container {
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: center;
-  color: black;
-  animation: expand 0.8s ease forwards;
-  background-color: var(--secondary-color);
-  position: relative;
-  transition: all 0.8s ease;
-}
-.container .container_content {
-  width: 50%;
-  /*Distancia del nav y el titulo*/
-}
-.container .container_content .container_content_inner {
-  width: 80%;
-  margin-left: 80px;
-}
-.container .container_content .container_content_inner, .container .container_content .container_content_inner .title {
-  overflow: hidden;
-  height: auto;
-  text-align: center;
-}
-.container .container_content .container_content_inner .h1-AboutUs, .container .container_content .container_content_inner .title .h1-AboutUs {
-  /* Fuente*/
-  font-family: "Oooh Baby", cursive;
-  font-size: 40px;
-  color: black;
-  margin-top: 20px;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-.container .container_content .container_content_inner, .container .container_content .container_content_inner .par, .container .container_content .container_content_inner .title, .container .container_content .container_content_inner .title .par {
-  height: auto;
-  overflow: hidden;
-}
-.container .container_content .container_content_inner .text-AboutUs, .container .container_content .container_content_inner .par .text-AboutUs, .container .container_content .container_content_inner .title .text-AboutUs, .container .container_content .container_content_inner .title .par .text-AboutUs {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 28px;
-  transform: translateY(300px);
-  animation: slideUp 0.8s ease-in-out forwards 0.8s;
-}
-.container .container_content .container_content_inner .container_outer_img {
-  margin: 50px;
-  width: 50%;
-  overflow: hidden;
-}
-.container .container_content .container_content_inner .container_outer_img.overlay {
-  position: absolute;
-  top: nth 0, 50%, 66.8%, -80px, 100%, 1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: -10;
-  background-color: var(--contrast-color);
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
-  }
-  100% {
-    transform: translateX(0px) scale(1);
-  }
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 /*Carrusel*/
 .carousel-fade {
   margin-left: 170px;
-}
-
-/*SECCION PRODUCTOS*/
-.h1Productos {
-  color: white;
-  padding: 20px;
-}
-
-/*BUSCADOR*/ /*DESACTIVAR CUANDO ESTE LISTO*/
-/*.box {
-    display: flex;
-    flex-direction: row;
-    justify-content:baseline;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-input.src{
-    padding: 9px 10px 9px 32px;
-    outline: none;
-    font-size: 18px;
-    border-radius: 15px;
-    color: #444;
-    border: 3px solid #ac0005;
-    background: #fff url("../assets/Img/Iconos/search-icon.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 60px;
-    transition: all .5s;
-}
-
-input.src:hover{
-    width: 180px;
-    background-color: #fff;
-    border-color:  #753228;
-    box-shadow: 0 0 5px #6dcff680;
-    cursor: pointer;
-}*/
-/*Fondo de productos*/
-.fondoMenu {
-  background-image: url("../Assets/Img/Fondos/fondo_productos.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*Seccion Productos*/
-.badges1 { /* aqui centre los productos uno al lado del otro */
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
-}
-
-.badges2 {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 50px; /*Espacio entre las badges y el footer*/
-}
-
-/*Caja de productos*/
-.seccionProdcutos .containerBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.seccionProdcutos .containerBox .Box {
-  flex: 1 1 30rem; /*Para la separacion entre boxes*/
-  margin: 1rem;
-  padding: 1rem;
-  background-color: lightpink;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 5px; /*Ajustar mas adelante*/
-  text-align: center;
-  padding-bottom: 3rem; /*Tamaño del box abajo*/
-}
-
-.seccionProdcutos .containerBox .Box:nth-child(2), .seccionProdcutos .containerBox .Box:hover {
-  border: 0.2rem solid blue; /*color al pasar el cursor por la caja*/
-}
-
-.seccionProdcutos .containerBox .Box .nombreProducto {
-  font-size: 25px;
-  color: #00796a; /*Si llega a necesitar*/
-  padding-top: 1rem; /*Separacion entre el nombre y la imagen*/
-}
-
-.seccionProdcutos .containerBox .Box .Precio {
-  font-size: 12.5px;
-  color: darkblue; /*Si llega a necesitar*/
-  padding: 10px 0; /*Separaion del nombre del producto y el precio*/
-}
-
-.seccionProdcutos .containerBox .Box .Precio span {
-  color: darkcyan;
-}
-
-.seccionProdcutos .containerBox .Box .Precio .Descripcion {
-  padding: 10px 0;
-}
-
-/*CATEGORIA ENTRADAS*/
-.badgeEntradas {
-  display: block;
-  position: relative;
-  width: 15rem; /*TAMAÑO IMAGEN*/
-  height: 15rem; /*TAMAÑO IMAGEN*/
-  background: url("../Assets/Img/Menu/Badges/Badge-Entradas.jpg") no-repeat 100% 50%;
-  background-size: 120%; /*ZOOM IMAGEN*/
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier 0.55, 0, 0.1, 1;
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.badgeEntradas:hover {
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
-  background-position: 0% 50%;
-}
-
-.badgeEntradas:hover .textEntradas {
-  transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
-  width: 15rem;
-  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
-  line-height: 15rem;
-  height: 15rem;
-  margin-top: -10rem;
-  margin-left: -10rem;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
-}
-
-.badgeEntradas .textEntradas {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
-  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  margin-top: -10rem;
-  margin-left: -10rem;
-  font-size: 1.5rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  color: black;
-  border-radius: 50%;
-  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
-  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-/*CATEGORIA PASTA*/
-.badgePasta {
-  display: block;
-  position: relative;
-  width: 15rem; /*TAMAÑO IMAGEN*/
-  height: 15rem; /*TAMAÑO IMAGEN*/
-  background: url("../Assets/Img/Menu/Badges/Badge-Sorrentino.jpg") no-repeat 100% 50%;
-  background-size: 124%; /*ZOOM IMAGEN*/
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.badgePasta:hover {
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
-  background-position: 0% 50%;
-}
-
-.badgePasta:hover .textPastas {
-  transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
-  width: 15rem;
-  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
-  line-height: 15rem;
-  height: 15rem;
-  margin-top: -10rem;
-  margin-left: -10rem;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
-}
-
-.badgePasta .textPastas {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
-  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  margin-top: -10rem;
-  margin-left: -10rem;
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
-  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-/*CATEGORIA TORTAS*/
-.badgeTortas {
-  display: block;
-  position: relative;
-  width: 15rem; /*TAMAÑO IMAGEN*/
-  height: 15rem; /*TAMAÑO IMAGEN*/
-  background: url("../Assets/Img/Menu/Badges/Badge-Torta.jpg") no-repeat 100% 50%;
-  background-size: 120%; /*ZOOM IMAGEN*/
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.badgeTortas:hover {
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
-  background-position: 0% 50%;
-}
-
-.badgeTortas:hover .textTortas {
-  transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
-  width: 15rem;
-  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
-  line-height: 15rem;
-  height: 15rem;
-  margin-top: -10rem;
-  margin-left: -10rem;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
-}
-
-.badgeTortas .textTortas {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
-  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  margin-top: -10rem;
-  margin-left: -10rem;
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
-  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-/*CATEGORIA POSTRES*/
-.badgePostres {
-  display: block;
-  position: relative;
-  width: 15rem; /*TAMAÑO IMAGEN*/
-  height: 15rem; /*TAMAÑO IMAGEN*/
-  background: url("../Assets/Img/Menu/Badges/Badge-Postres.jpg") no-repeat 100% 50%;
-  background-size: 120%; /*ZOOM IMAGEN*/
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.badgePostres:hover {
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
-  background-position: 0% 50%;
-}
-
-.badgePostres:hover .textPostres {
-  transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
-  width: 15rem;
-  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
-  line-height: 15rem;
-  height: 15rem;
-  margin-top: -10rem;
-  margin-left: -10rem;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
-}
-
-.badgePostres .textPostres {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
-  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  margin-top: -10rem;
-  margin-left: -10rem;
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
-  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-/*CATEGORIA ESPECIALES*/
-.badgeEspeciales {
-  display: block;
-  position: relative;
-  width: 15rem; /*TAMAÑO IMAGEN*/
-  height: 15rem; /*TAMAÑO IMAGEN*/
-  background: url("../Assets/Img/Menu/Badges/Badge-Especiales.jpg") no-repeat 100% 50%;
-  background-size: 137%; /*ZOOM IMAGEN*/
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-}
-
-.badgeEspeciales:hover {
-  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
-  background-position: 0% 50%;
-}
-
-.badgeEspeciales:hover .textEspeciales {
-  transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
-  width: 15rem;
-  letter-spacing: 8px; /*ESPACIO ENTRE LETRAS*/
-  line-height: 15rem;
-  height: 15rem;
-  margin-top: -10rem;
-  margin-left: -10rem;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
-}
-
-.badgeEspeciales .textEspeciales {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
-  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
-  margin-top: -10rem;
-  margin-left: -10rem;
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
-  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 /*FORMULARIOS*/
@@ -765,11 +332,8 @@ input {
   padding: 8px;
 }
 
-/*Centrar fuente*/
-/*position*/
-/*align-items*/
-/*justify-content*/
-/*overflow*/
+/*Colors*/
+/*background-color*/
 /*Footer*/
 #Pie {
   display: flex;
@@ -789,7 +353,7 @@ input {
 }
 
 .Imagenesdepago {
-  display: f flex;
+  display: flex;
 }
 
 .Efectivo {
@@ -823,7 +387,7 @@ input {
 #rrss ul li a {
   width: 40px; /*Tamaño de los circulos*/
   height: 40px;
-  background-color: #fff;
+  background-color: white;
   text-align: center;
   line-height: 33px; /*Posicion de la imagen*/
   font-size: 35px;
@@ -832,7 +396,7 @@ input {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 3px solid white;
   z-index: 1;
 }
 
@@ -869,7 +433,7 @@ ul li a:before {
 
 /*Fondo boton whatsapp*/
 #rrss ul li:nth-child(2) a:before {
-  background: #25D366;
+  background: #25d366;
 }
 
 /*Copyright*/

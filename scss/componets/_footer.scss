@@ -2,9 +2,9 @@
 
 /*Footer*/
 #Pie {
-    display: $display-fb;
+    display: flex;
     flex-direction: column;
-    background-color: #d8af97;
+    background-color: $BlondeLace;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 
@@ -12,7 +12,7 @@
 /*Medios de pago*/
 
 .Mediosdepago {
-    display: $display-fb;
+    display: flex;
     align-items: center;
     justify-content: left;
     padding: 10px;
@@ -20,7 +20,7 @@
 }
 
 .Imagenesdepago {
-    display: f$display-fb;
+    display: flex;
 }
 
 .Efectivo {
@@ -34,7 +34,7 @@
 
 /*Redes Sociales*/
 .Nr {
-    display: $display-fb;
+    display: flex;
     align-items: center;
     justify-content: right;
     padding: 10px;
@@ -42,7 +42,7 @@
 }
 
 #rrss ul{ /*Aqui fue lo que modifique para centrar las redes*/
-    display: $display-fb;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-top: 10px;
@@ -55,7 +55,7 @@
 #rrss ul li a {
     width: 40px;/*Tamaño de los circulos*/
     height: 40px;
-    background-color: #fff;
+    background-color: $white;
     text-align: center;
     line-height: 33px; /*Posicion de la imagen*/
     font-size: 35px;
@@ -64,13 +64,13 @@
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 3px solid #fff;
+    border: 3px solid $white;
     z-index: 1;
 }
 
 #rrss ul li a .rrss {
     position: relative;
-    color: #262626;
+    color: $Nero;
     transition: .5s;
     z-index: 3;
 }
@@ -102,7 +102,7 @@ ul li a:before {
 
 /*Fondo boton whatsapp*/
 #rrss ul li:nth-child(2) a:before{
-    background: #25D366;
+    background: $AlgalFuel;
 }
 
 /*Copyright*/

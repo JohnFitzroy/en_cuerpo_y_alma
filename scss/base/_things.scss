@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 
 /*Body, h1, a, p, h2, h3,*//* Formuladrio(form, label)*/
 body {
-    background-color: #ffffff;
+    background-color: $white;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 /*Color delos enlaces*/
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
 }
 
 /*Fuente*/

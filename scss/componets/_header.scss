@@ -1,11 +1,12 @@
+@import "../base/variables";
+@import "../base/things";
 /*Header y nav*/
 .navbar {
-    background-color: #d8af97;
-
+    background-color: $BlondeLace;
     & .nav-link {
         margin: 20px 20px 20px 20px;
         &:hover {
-            color: black;
+            color: $black;
         }
     }
 }
