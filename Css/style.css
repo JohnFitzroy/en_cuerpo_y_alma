@@ -76,6 +76,96 @@ p, h2, h3, form, label {
   color: black;
 }
 
+/*Colors*/
+/*background-color*/
+/*Seccion Nosotros*/
+.container {
+  display: flex;
+  height: 120vh; /*Tamaño del fondo rosa*/
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  animation: expand 0.8s ease forwards;
+  background-color: #ebcfce;
+  position: relative;
+  transition: all 0.8s ease;
+}
+.container .container_content {
+  /*Distancia del nav y el titulo*/
+  width: 50%;
+}
+.container .container_content .container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+.container .container_content .container_content_inner, .container .container_content .container_content_inner .title {
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+}
+.container .container_content .container_content_inner .h1-AboutUs, .container .container_content .container_content_inner .title .h1-AboutUs {
+  /* Fuente*/
+  font-family: "Oooh Baby", cursive;
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+.container .container_content .container_content_inner, .container .container_content .container_content_inner .par, .container .container_content .container_content_inner .title, .container .container_content .container_content_inner .title .par {
+  height: auto;
+  overflow: hidden;
+}
+.container .container_content .container_content_inner .text-AboutUs, .container .container_content .container_content_inner .par .text-AboutUs, .container .container_content .container_content_inner .title .text-AboutUs, .container .container_content .container_content_inner .title .par .text-AboutUs {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 28px;
+  transform: translateY(300px);
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
+}
+.container .container_content .container_content_inner .text-AboutUs .Linkrrss, .container .container_content .container_content_inner .par .text-AboutUs .Linkrrss, .container .container_content .container_content_inner .title .text-AboutUs .Linkrrss, .container .container_content .container_content_inner .title .par .text-AboutUs .Linkrrss { /*Mientras se ajusta el texto*/
+  text-decoration: none;
+  color: #8A2BE2;
+}
+.container .container_content .container_content_inner .container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}
+.container .container_content .container_content_inner .container_outer_img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: #ebcfce;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /*Carrusel*/
 .carousel-fade {
   margin-left: 170px;
