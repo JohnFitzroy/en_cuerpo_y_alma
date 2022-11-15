@@ -1,6 +1,8 @@
+@import "../base/variables";
+
 /*Footer*/
 #Pie {
-    display: flex;
+    display: $display-fb;
     flex-direction: column;
     background-color: #d8af97;
     font-family: 'Josefin Sans', sans-serif;
@@ -10,7 +12,7 @@
 /*Medios de pago*/
 
 .Mediosdepago {
-    display: flex;
+    display: $display-fb;
     align-items: center;
     justify-content: left;
     padding: 10px;
@@ -18,7 +20,7 @@
 }
 
 .Imagenesdepago {
-    display: flex;
+    display: f$display-fb;
 }
 
 .Efectivo {
@@ -32,7 +34,7 @@
 
 /*Redes Sociales*/
 .Nr {
-    display: flex;
+    display: $display-fb;
     align-items: center;
     justify-content: right;
     padding: 10px;
@@ -40,7 +42,7 @@
 }
 
 #rrss ul{ /*Aqui fue lo que modifique para centrar las redes*/
-    display: flex;
+    display: $display-fb;
     align-items: center;
     justify-content: flex-end;
     margin-top: 10px;

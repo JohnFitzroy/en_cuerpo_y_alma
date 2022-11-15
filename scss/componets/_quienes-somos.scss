@@ -1,85 +1,75 @@
-/*Link del texto*/
-.Linkrrss {
-    text-decoration: none;
-    color: blueviolet;
-}
+@import "../base/variables";
+@import "../base/listas";
 
 /*Seccion Nosotros*/
 :root {
     --secondary-color: #ebcfce;
     --contrast-color: #ebcfce;/* #ffffff */
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    z-index: -10; 
-    background-color: var(--contrast-color);
+.bg-nosotros {
+    background-color: var(--secondary-color);
 }
 
 .container {
-    display: flex;
-    height: 100vh; /*Tamaño del fondo rosa*/
-    justify-content: space-around;
-    align-items: center;
-    color: black;
+    display: $display-fb;
+    height: nth( $height, 2);
+    justify-content: $justi-around;
+    align-items: $align-center;
+    color:nth($color,2 );
     animation: expand .8s ease forwards;
     background-color: var(--secondary-color);
-    position: relative;
+    position: $posi-rela;
     transition: all .8s ease;
-}
+    .container_content {
+        width: nth($width, 1);
 
-.container_content {
-    width: 50%;
-}
+    /*Distancia del nav y el titulo*/
+        .container_content_inner {
+            width: nth($width, 2 );
+            margin-left: nth($m-left, 1);
+            &, .title {
+                overflow: $over-hidden;
+                height: nth($height, 3);
+                text-align: $txt-align;
+                .h1-AboutUs {
+                    /* Fuente*/
+                    font-family: 'Oooh Baby', cursive;
+                    font-size: nth($fnt-size, 2);
+                    color: nth($color, 2);
+                    margin-top: nth($m-bottom, 1);
+                    transform: translateY(100px);
+                    animation: slideUp .8s ease forwards .5s;            
+                }
 
-.container_content_inner {
-    width: 80%;
-    margin-left: 80px;
-}
-
-.container_outer_img {
-    margin: 50px;
-    width: 50%;
-    overflow: hidden;
-}
-
-.container_img {
-    width: 100%;
-    animation: slideIn 1.5s ease-in-out forwards;
-}
-
-.par {
-    height: auto;
-    overflow: hidden;
-}
-
-.text-AboutUs{
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 28px;
-    transform: translateY(300px);
-    animation: slideUp .8s ease-in-out forwards .8s;
-}
-
-.title {
-    overflow: hidden;
-    height: auto;
-    text-align: center;
-}
-
-.h1-AboutUs {
-        /* Fuente*/
-        font-family: 'Oooh Baby', cursive;
-        font-size: 40px;
-        color: black;
-        margin-bottom: 20px;
-        transform: translateY(100px);
-        animation: slideUp .8s ease forwards .5s;
-}
+            &, .par {
+                height: nth($height, 3);
+                overflow: $over-hidden;
+                .text-AboutUs {
+                    font-family: 'Josefin Sans', sans-serif;
+                    line-height: nth($li-height, 4);
+                    transform: translateY(300px);
+                    animation: slideUp .8s ease-in-out forwards .8s;                
+                }
+            }
+            }
+        .container_outer_img {
+            margin: nth($marg,3);
+            width: nth($width,1 );
+            overflow: $over-hidden;
+            &.overlay {
+                position: $posi-abso;
+                top: nth ($top, 1);
+                left: nth($left, 1);
+                right: nth($right, 1);
+                bottom: nth($bottom, 1);
+                height: nth($height, 1);
+                z-index: nth($z-index, 5);
+                background-color: var(--contrast-color);
+                }
+            }
+            }
+        }
+    }
 
 @keyframes slideIn {
     0% {
