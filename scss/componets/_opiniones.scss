@@ -1,4 +1,5 @@
-/*SECCION OPINIONES*/
+@import "../base/mixins";
+@import "../base/variables";
 
 .fondoOpiniones {
     background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
@@ -6,62 +7,135 @@
     background-size: cover;
 }
 
-/*Oponion de clientes*/
-:root {
-    --ewc-color-1: #ffffff;/*Blanco*/
-    --ewc-color-2: #eae1da;/*Fondo chat*/
-    --ewc-color-4: #00796a;/*Fondo nombre y enviar*/
-}
-
-.ewChat {
-    position:sticky;
-    bottom: 15px;
-    right: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    max-width: calc(100% - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 11;
-}
-
-.ewChatBox {
-    width: 100%;
-    background-color: var(--ewc-color-2);
-    border-radius: 15px;
-    display: flex;
-    transition: opacity 1000ms;
-    flex-direction: column;
-}
-
-.ewChatAvatar {
-    left: calc(50% - 32px);
-    top: -80px;
-    width: 59px;
-    height: 59px;
-    padding: 3px;
-    border-radius: 100%;
-    background-color: var(--ewc-color-1);
-    display: flex;
-}
-
 .Opinions {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 25px;/*Espacio entre medido bajo de las badges*/
-}
-
-/*Centrar el Avatar*/
-.ewChatAvatar img {
-    margin: 2px 4px 5px;
+    @include flex-evenly-padding;
+    .ewChat {
+        position:sticky;
+        bottom: 15px;
+        right: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 320px;
+        max-width: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 11;    
+        .ewChatBox {
+            width: 100%;
+            background-color: $SpringWood;
+            border-radius: 15px;
+            display: flex;
+            transition: opacity 1000ms;
+            flex-direction: column;        
+            .ewChatHeader {
+                background-color: $HawkTurquoise;
+                color: $white;
+                border-radius: 15px 15px 0 0;
+                padding: 5px;/*Tamaño del fondo verde*/
+                text-align:center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                h3 {
+                    font-size: 18px;
+                    margin: 3px;                
+                }
+                p {
+                    font-size: 12px;
+                    margin: 0;                
+                }
+                .ewChatAvatar {
+                    left: calc(50% - 32px);
+                    top: -80px;
+                    width: 59px;
+                    height: 59px;
+                    padding: 3px;
+                    border-radius: 100%;
+                    background-color: $white;
+                    display: flex;
+                    img {
+                        margin: 2px 4px 5px;
+                    }
+                    // .Valeria {
+                    // }
+                }
+            }
+            .ewChatBubble {
+                background-color: $white;
+                margin: 10px 18px 10px 30px;
+                padding: 9px 9px 25px 9px;
+                text-align: left;
+                border-radius: 0 10px 10px 10px;
+                position: relative;
+                transition: opacity 1000ms;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border: 15px solid transparent;
+                    border-right-color: $white;
+                    border-left: 0;
+                    border-top: 0;
+                    margin-top: 0;
+                    margin-left: -15px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 14px;                
+                }
+                span {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 9px;
+                    opacity: 0.5;
+                    font-size: 11px;                
+                }
+            }
+        }
+        .ewChatInput {
+            display: flex;
+            transition: opacity 1000ms;
+            width: 100%;
+            margin-top: 10px;
+            background-color: $white;
+            height: 48px;
+            border-radius: 24px;
+            border: 1px solid black; /*Quitar despues que coloque fondo*/
+            border-width: thin; /*Quitar despues que coloque fondo*/        
+            input{
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 16px;
+                background-color: $white;
+                height: 32px;
+                margin: auto 20px;
+                width: 100%;
+                border: none;            
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                border: none;
+                background-color: $HawkTurquoise;
+                border-radius: 20px;
+                margin: 4px;
+                color: $white;
+                padding: 8px;
+            
+            }
+        }
+    }
 }
 
 .Valeria {
-    margin: -5px 0 0 -5px;
+    margin: -8px 0 0 -4px;
 }
+
 .ewChatAvatar .Silvio {
     margin: 0 0 60px 7px;
 }
@@ -70,123 +144,39 @@
     margin: 0 0 60px 2px;
 }
 
+.ewChatAvatar .Micaela {
+    margin: -4px 10px 5px -2px;
+
+}
+
 .ewChatAvatar .JoseG {
     margin: 0 17px 5px 5px;
 }
 
 .ewChatAvatar .Ganesha {
-    margin: 0 10px 5px -2px;
+    margin: -4px 10px 5px -2px;
 }
 
 .ewChatAvatar .Francia {
-    margin: 0 7px 5px 5px;
+    margin: -1px 7px 5px 3px;
 }
 
 .ewChatAvatar .Andreina {
-margin-left: -3px;
+    margin: -4px 10px 5px -2px;
 }
 
 .ewChatAvatar .Jose {
-margin-left: 1px;}
+margin-left: 1px;
+}
 
 .ewChatAvatar .Luis {
 margin-left: 1px;
 }
 
 .ewChatAvatar .Fabiana {
-    margin-left: -5px;
+    margin: -2px 10px 5px -5px;
 }
 
-.ewChatHeader {
-    background-color: var(--ewc-color-4);
-    color: var(--ewc-color-1);
-    border-radius: 15px 15px 0 0;
-    padding: 5px;/*Tamaño del fondo verde*/
-    text-align:center;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-
-.ewChatHeader h3 {
-    font-size: 18px;
-    margin: 3px;
-}
-
-.ewChatHeader p {
-    font-size: 12px;
-    margin: 0;
-}
-
-.ewChatBubble {
-    background-color: var(--ewc-color-1);
-    margin: 10px 18px 10px 30px;
-    padding: 9px 9px 25px 9px;
-    text-align: left;
-    border-radius: 0 10px 10px 10px;
-    position: relative;
-    transition: opacity 1000ms;
-}
-
-.ewChatBubble:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    border: 15px solid transparent;
-    border-right-color: var(--ewc-color-1);
-    border-left: 0;
-    border-top: 0;
-    margin-top: 0;
-    margin-left: -15px;
-}
-
-.ewChatBubble p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.ewChatBubble span {
-    position: absolute;
-    bottom: 5px;
-    right: 9px;
-    opacity: 0.5;
-    font-size: 11px;
-}
-
-.ewChatInput {
-    display: flex;
-    transition: opacity 1000ms;
-    width: 100%;
-    margin-top: 10px;
-    background-color: var(--ewc-color-1);
-    height: 48px;
-    border-radius: 24px;
-    border: 1px solid black; /*Quitar despues que coloque fondo*/
-    border-width: thin; /*Quitar despues que coloque fondo*/
-}
-
-.ewChatInput input {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    background-color: var(--ewc-color-1);
-    height: 32px;
-    margin: auto 20px;
-    width: 100%;
-    border: none;
-}
-
-.ewChatInput input:focus {
-    outline: none;
-}
-
-.ewChatInput button {
-    border: none;
-    background-color: var(--ewc-color-4);
-    border-radius: 20px;
-    margin: 4px;
-    color: var(--ewc-color-1);
-    padding: 8px;
+.ewChatAvatar .Cristiana {
+    margin: -3px 10px 5px 2px;
 }

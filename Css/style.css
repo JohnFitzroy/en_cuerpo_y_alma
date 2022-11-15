@@ -489,10 +489,186 @@ input {
   display: block;
 }
 
+/*Colors*/
+/*background-color*/
+/*Colors*/
+/*background-color*/
 .fondoOpiniones {
   background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.Opinions {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
+}
+.Opinions .ewChat {
+  position: sticky;
+  bottom: 15px;
+  right: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  max-width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 11;
+}
+.Opinions .ewChat .ewChatBox {
+  width: 100%;
+  background-color: #eae1da;
+  border-radius: 15px;
+  display: flex;
+  transition: opacity 1000ms;
+  flex-direction: column;
+}
+.Opinions .ewChat .ewChatBox .ewChatHeader {
+  background-color: #00796a;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  padding: 5px; /*Tamaño del fondo verde*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Opinions .ewChat .ewChatBox .ewChatHeader h3 {
+  font-size: 18px;
+  margin: 3px;
+}
+.Opinions .ewChat .ewChatBox .ewChatHeader p {
+  font-size: 12px;
+  margin: 0;
+}
+.Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar {
+  left: calc(50% - 32px);
+  top: -80px;
+  width: 59px;
+  height: 59px;
+  padding: 3px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+}
+.Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar img {
+  margin: 2px 4px 5px;
+}
+.Opinions .ewChat .ewChatBox .ewChatBubble {
+  background-color: white;
+  margin: 10px 18px 10px 30px;
+  padding: 9px 9px 25px 9px;
+  text-align: left;
+  border-radius: 0 10px 10px 10px;
+  position: relative;
+  transition: opacity 1000ms;
+}
+.Opinions .ewChat .ewChatBox .ewChatBubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: white;
+  border-left: 0;
+  border-top: 0;
+  margin-top: 0;
+  margin-left: -15px;
+}
+.Opinions .ewChat .ewChatBox .ewChatBubble p {
+  margin: 0;
+  font-size: 14px;
+}
+.Opinions .ewChat .ewChatBox .ewChatBubble span {
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  opacity: 0.5;
+  font-size: 11px;
+}
+.Opinions .ewChat .ewChatInput {
+  display: flex;
+  transition: opacity 1000ms;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid black; /*Quitar despues que coloque fondo*/
+  border-width: thin; /*Quitar despues que coloque fondo*/
+}
+.Opinions .ewChat .ewChatInput input {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  height: 32px;
+  margin: auto 20px;
+  width: 100%;
+  border: none;
+}
+.Opinions .ewChat .ewChatInput input:focus {
+  outline: none;
+}
+.Opinions .ewChat .ewChatInput button {
+  border: none;
+  background-color: #00796a;
+  border-radius: 20px;
+  margin: 4px;
+  color: white;
+  padding: 8px;
+}
+
+.Valeria {
+  margin: -8px 0 0 -4px;
+}
+
+.ewChatAvatar .Silvio {
+  margin: 0 0 60px 7px;
+}
+
+.ewChatAvatar .Christian {
+  margin: 0 0 60px 2px;
+}
+
+.ewChatAvatar .Micaela {
+  margin: -4px 10px 5px -2px;
+}
+
+.ewChatAvatar .JoseG {
+  margin: 0 17px 5px 5px;
+}
+
+.ewChatAvatar .Ganesha {
+  margin: -4px 10px 5px -2px;
+}
+
+.ewChatAvatar .Francia {
+  margin: -1px 7px 5px 3px;
+}
+
+.ewChatAvatar .Andreina {
+  margin: -4px 10px 5px -2px;
+}
+
+.ewChatAvatar .Jose {
+  margin-left: 1px;
+}
+
+.ewChatAvatar .Luis {
+  margin-left: 1px;
+}
+
+.ewChatAvatar .Fabiana {
+  margin: -2px 10px 5px -5px;
+}
+
+.ewChatAvatar .Cristiana {
+  margin: -3px 10px 5px 2px;
 }
 
 /*Colors*/
