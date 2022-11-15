@@ -171,6 +171,261 @@ p, h2, h3, form, label {
   margin-left: 170px;
 }
 
+/*Colors*/
+/*background-color*/
+/*Colors*/
+/*background-color*/
+.fondoMenu {
+  background-image: url("../Assets/Img/Fondos/fondo_productos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondoMenu .h1Productos {
+  color: white;
+  padding: 20px;
+}
+.fondoMenu .badges1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
+}
+.fondoMenu .badges1 .badgeEntradas {
+  display: block;
+  position: relative;
+  width: 15rem; /*TAMAÑO IMAGEN*/
+  height: 15rem; /*TAMAÑO IMAGEN*/
+  background: url("../Assets/Img/Menu/Badges/Badge-Entradas.jpg") no-repeat 100% 50%;
+  background-size: 120%; /*ZOOM IMAGEN*/
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier 0.55, 0, 0.1, 1;
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.fondoMenu .badges1 .badgeEntradas:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 50%;
+}
+.fondoMenu .badges1 .badgeEntradas:hover .textEntradas {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+  width: 15rem;
+  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+  line-height: 15rem;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.fondoMenu .badges1 .badgeEntradas .textEntradas {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
+  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  margin-top: -10rem;
+  margin-left: -10rem;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 50%;
+  background: rebeccapurple; /*COLOR CIRCULO TEXTO FUERA*/
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fondoMenu .badges1 .badgePasta {
+  display: block;
+  position: relative;
+  width: 15rem; /*TAMAÑO IMAGEN*/
+  height: 15rem; /*TAMAÑO IMAGEN*/
+  background: url("../Assets/Img/Menu/Badges/Badge-Sorrentino.jpg") no-repeat 100% 50%;
+  background-size: 124%; /*ZOOM IMAGEN*/
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.fondoMenu .badges1 .badgePasta:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 50%;
+}
+.fondoMenu .badges1 .badgePasta:hover .textPastas {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+  width: 15rem;
+  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+  line-height: 15rem;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.fondoMenu .badges1 .badgePasta .textPastas {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
+  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  margin-top: -10rem;
+  margin-left: -10rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background: #663399; /*COLOR CIRCULO TEXTO FUERA*/
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fondoMenu .badges1 .badgeTortas {
+  display: block;
+  position: relative;
+  width: 15rem; /*TAMAÑO IMAGEN*/
+  height: 15rem; /*TAMAÑO IMAGEN*/
+  background: url("../Assets/Img/Menu/Badges/Badge-Torta.jpg") no-repeat 100% 50%;
+  background-size: 120%; /*ZOOM IMAGEN*/
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.fondoMenu .badges1 .badgeTortas:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 50%;
+}
+.fondoMenu .badges1 .badgeTortas:hover .textTortas {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+  width: 15rem;
+  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+  line-height: 15rem;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.fondoMenu .badges1 .badgeTortas .textTortas {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
+  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  margin-top: -10rem;
+  margin-left: -10rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background: #663399; /*COLOR CIRCULO TEXTO FUERA*/
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.badges2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px; /*Espacio entre las badges y el footer*/
+}
+.badges2 .badgePostres {
+  display: block;
+  position: relative;
+  width: 15rem; /*TAMAÑO IMAGEN*/
+  height: 15rem; /*TAMAÑO IMAGEN*/
+  background: url("../Assets/Img/Menu/Badges/Badge-Postres.jpg") no-repeat 100% 50%;
+  background-size: 120%; /*ZOOM IMAGEN*/
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.badges2 .badgePostres:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 50%;
+}
+.badges2 .badgePostres:hover .textPostres {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+  width: 15rem;
+  letter-spacing: 1rem; /*ESPACIO ENTRE LETRAS*/
+  line-height: 15rem;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.badges2 .badgePostres .textPostres {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
+  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  margin-top: -10rem;
+  margin-left: -10rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background: #663399; /*COLOR CIRCULO TEXTO FUERA*/
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.badges2 .badgeEspeciales {
+  display: block;
+  position: relative;
+  width: 15rem; /*TAMAÑO IMAGEN*/
+  height: 15rem; /*TAMAÑO IMAGEN*/
+  background: url("../Assets/Img/Menu/Badges/Badge-Especiales.jpg") no-repeat 100% 50%;
+  background-size: 137%; /*ZOOM IMAGEN*/
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.badges2 .badgeEspeciales:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 50%;
+}
+.badges2 .badgeEspeciales:hover .textEspeciales {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
+  width: 15rem;
+  letter-spacing: 8px; /*ESPACIO ENTRE LETRAS*/
+  line-height: 15rem;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.badges2 .badgeEspeciales .textEspeciales {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem; /*CENTRAR EL TEXTO DEL CIRCULO*/
+  left: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  top: 66.8%; /*POSICION DEL CIRCULO TEXTO*/
+  margin-top: -10rem;
+  margin-left: -10rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background: #663399; /*COLOR CIRCULO TEXTO FUERA*/
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
 /*FORMULARIOS*/
 form {
   width: 460px;
