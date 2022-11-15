@@ -9,8 +9,11 @@
         color: $white;
         padding: 20px;    
     }
+}
+
     .badges1 {
         @include flex-evenly-padding;
+        /*CATEGORIA ENTRADAS*/
         .badgeEntradas{
             @include badges;
             background: url("../Assets/Img/Menu/Badges/Badge-Entradas.jpg") no-repeat 100% 50%;
@@ -46,6 +49,7 @@
                 transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);            
             }
         }
+        /*CATEGORIA PASTA*/
         .badgePasta{
             @include badges;
             background: url("../Assets/Img/Menu/Badges/Badge-Sorrentino.jpg") no-repeat 100% 50%;
@@ -63,6 +67,7 @@
                 @include badge-txt;
             }
         }
+        /*CATEGORIA TORTAS*/
         .badgeTortas{
             @include badges;
             background: url("../Assets/Img/Menu/Badges/Badge-Torta.jpg") no-repeat 100% 50%;
@@ -81,12 +86,12 @@
             }
         }
     }
-}
 
 .badges2{
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 50px;/*Espacio entre las badges y el footer*/
+    /*CATEGORIA POSTRES*/
     .badgePostres {
         @include badges;
         background: url("../Assets/Img/Menu/Badges/Badge-Postres.jpg") no-repeat 100% 50%;
@@ -104,6 +109,7 @@
             @include badge-txt;
         }
     }
+    /*CATEGORIA ESPECIALES*/
     .badgeEspeciales {
         @include badges;
         background: url("../Assets/Img/Menu/Badges/Badge-Especiales.jpg") no-repeat 100% 50%;

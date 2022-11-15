@@ -184,12 +184,16 @@ p, h2, h3, form, label {
   color: white;
   padding: 20px;
 }
-.fondoMenu .badges1 {
+
+.badges1 {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
+  /*CATEGORIA ENTRADAS*/
+  /*CATEGORIA PASTA*/
+  /*CATEGORIA TORTAS*/
 }
-.fondoMenu .badges1 .badgeEntradas {
+.badges1 .badgeEntradas {
   display: block;
   position: relative;
   width: 15rem; /*TAMAÑO IMAGEN*/
@@ -200,11 +204,11 @@ p, h2, h3, form, label {
   transition: all 0.5s cubic-bezier 0.55, 0, 0.1, 1;
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
-.fondoMenu .badges1 .badgeEntradas:hover {
+.badges1 .badgeEntradas:hover {
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
   background-position: 0% 50%;
 }
-.fondoMenu .badges1 .badgeEntradas:hover .textEntradas {
+.badges1 .badgeEntradas:hover .textEntradas {
   transform: rotate(-45deg) translate(0px) rotate(-315deg);
   background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
   width: 15rem;
@@ -215,7 +219,7 @@ p, h2, h3, form, label {
   margin-left: -10rem;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
 }
-.fondoMenu .badges1 .badgeEntradas .textEntradas {
+.badges1 .badgeEntradas .textEntradas {
   display: block;
   position: absolute;
   width: 10rem;
@@ -235,7 +239,7 @@ p, h2, h3, form, label {
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
-.fondoMenu .badges1 .badgePasta {
+.badges1 .badgePasta {
   display: block;
   position: relative;
   width: 15rem; /*TAMAÑO IMAGEN*/
@@ -246,11 +250,11 @@ p, h2, h3, form, label {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
-.fondoMenu .badges1 .badgePasta:hover {
+.badges1 .badgePasta:hover {
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
   background-position: 0% 50%;
 }
-.fondoMenu .badges1 .badgePasta:hover .textPastas {
+.badges1 .badgePasta:hover .textPastas {
   transform: rotate(-45deg) translate(0px) rotate(-315deg);
   background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
   width: 15rem;
@@ -261,7 +265,7 @@ p, h2, h3, form, label {
   margin-left: -10rem;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
 }
-.fondoMenu .badges1 .badgePasta .textPastas {
+.badges1 .badgePasta .textPastas {
   display: block;
   position: absolute;
   width: 10rem;
@@ -281,7 +285,7 @@ p, h2, h3, form, label {
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
-.fondoMenu .badges1 .badgeTortas {
+.badges1 .badgeTortas {
   display: block;
   position: relative;
   width: 15rem; /*TAMAÑO IMAGEN*/
@@ -292,11 +296,11 @@ p, h2, h3, form, label {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
-.fondoMenu .badges1 .badgeTortas:hover {
+.badges1 .badgeTortas:hover {
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
   background-position: 0% 50%;
 }
-.fondoMenu .badges1 .badgeTortas:hover .textTortas {
+.badges1 .badgeTortas:hover .textTortas {
   transform: rotate(-45deg) translate(0px) rotate(-315deg);
   background: rgba(102, 51, 153, 0.5); /*COLOR DEL CIRCULO TEXTO*/
   width: 15rem;
@@ -307,7 +311,7 @@ p, h2, h3, form, label {
   margin-left: -10rem;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
 }
-.fondoMenu .badges1 .badgeTortas .textTortas {
+.badges1 .badgeTortas .textTortas {
   display: block;
   position: absolute;
   width: 10rem;
@@ -332,6 +336,8 @@ p, h2, h3, form, label {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 50px; /*Espacio entre las badges y el footer*/
+  /*CATEGORIA POSTRES*/
+  /*CATEGORIA ESPECIALES*/
 }
 .badges2 .badgePostres {
   display: block;
@@ -483,198 +489,10 @@ input {
   display: block;
 }
 
-/*SECCION OPINIONES*/
 .fondoOpiniones {
   background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/*Oponion de clientes*/
-:root {
-  --ewc-color-1: #ffffff; /*Blanco*/
-  --ewc-color-2: #eae1da; /*Fondo chat*/
-  --ewc-color-4: #00796a; /*Fondo nombre y enviar*/
-}
-
-.ewChat {
-  position: sticky;
-  bottom: 15px;
-  right: 30px;
-  font-family: "Josefin Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  max-width: calc(100% - 60px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 11;
-}
-
-.ewChatBox {
-  width: 100%;
-  background-color: var(--ewc-color-2);
-  border-radius: 15px;
-  display: flex;
-  transition: opacity 1000ms;
-  flex-direction: column;
-}
-
-.ewChatAvatar {
-  left: calc(50% - 32px);
-  top: -80px;
-  width: 59px;
-  height: 59px;
-  padding: 3px;
-  border-radius: 100%;
-  background-color: var(--ewc-color-1);
-  display: flex;
-}
-
-.Opinions {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
-}
-
-/*Centrar el Avatar*/
-.ewChatAvatar img {
-  margin: 2px 4px 5px;
-}
-
-.Valeria {
-  margin: -5px 0 0 -5px;
-}
-
-.ewChatAvatar .Silvio {
-  margin: 0 0 60px 7px;
-}
-
-.ewChatAvatar .Christian {
-  margin: 0 0 60px 2px;
-}
-
-.ewChatAvatar .JoseG {
-  margin: 0 17px 5px 5px;
-}
-
-.ewChatAvatar .Ganesha {
-  margin: 0 10px 5px -2px;
-}
-
-.ewChatAvatar .Francia {
-  margin: 0 7px 5px 5px;
-}
-
-.ewChatAvatar .Andreina {
-  margin-left: -3px;
-}
-
-.ewChatAvatar .Jose {
-  margin-left: 1px;
-}
-
-.ewChatAvatar .Luis {
-  margin-left: 1px;
-}
-
-.ewChatAvatar .Fabiana {
-  margin-left: -5px;
-}
-
-.ewChatHeader {
-  background-color: var(--ewc-color-4);
-  color: var(--ewc-color-1);
-  border-radius: 15px 15px 0 0;
-  padding: 5px; /*Tamaño del fondo verde*/
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.ewChatHeader h3 {
-  font-size: 18px;
-  margin: 3px;
-}
-
-.ewChatHeader p {
-  font-size: 12px;
-  margin: 0;
-}
-
-.ewChatBubble {
-  background-color: var(--ewc-color-1);
-  margin: 10px 18px 10px 30px;
-  padding: 9px 9px 25px 9px;
-  text-align: left;
-  border-radius: 0 10px 10px 10px;
-  position: relative;
-  transition: opacity 1000ms;
-}
-
-.ewChatBubble:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 0;
-  border: 15px solid transparent;
-  border-right-color: var(--ewc-color-1);
-  border-left: 0;
-  border-top: 0;
-  margin-top: 0;
-  margin-left: -15px;
-}
-
-.ewChatBubble p {
-  margin: 0;
-  font-size: 14px;
-}
-
-.ewChatBubble span {
-  position: absolute;
-  bottom: 5px;
-  right: 9px;
-  opacity: 0.5;
-  font-size: 11px;
-}
-
-.ewChatInput {
-  display: flex;
-  transition: opacity 1000ms;
-  width: 100%;
-  margin-top: 10px;
-  background-color: var(--ewc-color-1);
-  height: 48px;
-  border-radius: 24px;
-  border: 1px solid black; /*Quitar despues que coloque fondo*/
-  border-width: thin; /*Quitar despues que coloque fondo*/
-}
-
-.ewChatInput input {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  background-color: var(--ewc-color-1);
-  height: 32px;
-  margin: auto 20px;
-  width: 100%;
-  border: none;
-}
-
-.ewChatInput input:focus {
-  outline: none;
-}
-
-.ewChatInput button {
-  border: none;
-  background-color: var(--ewc-color-4);
-  border-radius: 20px;
-  margin: 4px;
-  color: var(--ewc-color-1);
-  padding: 8px;
 }
 
 /*Colors*/
