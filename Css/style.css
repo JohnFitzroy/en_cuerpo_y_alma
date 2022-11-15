@@ -673,56 +673,45 @@ input {
 
 /*Colors*/
 /*background-color*/
-/*Footer*/
 #Pie {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #d8af97;
   font-family: "Josefin Sans", sans-serif;
-  text-align: center;
 }
 
 /*Medios de pago*/
 .Mediosdepago {
-  display: flex;
-  align-items: center;
-  justify-content: left;
   padding: 10px;
-  margin-right: 40px;
 }
 
 .Imagenesdepago {
   display: flex;
+  justify-content: space-evenly;
+  margin: 0 50px 10px 10px;
 }
 
-.Efectivo {
-  margin: 0 5px 0 20px;
+.Copyright {
+  margin-top: 70px;
 }
 
-.Mercadopago {
-  margin: 5px;
-}
-
-/*Redes Sociales*/
-.Nr {
-  display: flex;
-  align-items: center;
-  justify-content: right;
+#rrss .Nr {
   padding: 10px;
-  margin-right: 40px;
 }
-
-#rrss ul { /*Aqui fue lo que modifique para centrar las redes*/
+#rrss ul {
+  /*Aqui fue lo que modifique para centrar las redes*/
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 10px;
+  margin: -20px 0 0 15px;
 }
-
 #rrss ul li {
   list-style: none;
 }
-
+#rrss ul li:nth-child(1) a:before {
+  background-image: url("../Assets/Img/Fondos/fondoInstagram.png");
+}
+#rrss ul li:nth-child(2) a:before {
+  background-color: #25d366;
+}
 #rrss ul li a {
   width: 40px; /*Tamaño de los circulos*/
   height: 40px;
@@ -738,19 +727,7 @@ input {
   border: 3px solid white;
   z-index: 1;
 }
-
-#rrss ul li a .rrss {
-  position: relative;
-  color: #262626;
-  transition: 0.5s;
-  z-index: 3;
-}
-
-#rrss ul li a:hover .rrss {
-  transform: rotateY(360deg);
-}
-
-ul li a:before {
+#rrss ul li a:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -760,24 +737,17 @@ ul li a:before {
   transition: 0.5s;
   z-index: 2;
 }
-
 #rrss ul li a:hover:before {
   top: 0;
 }
-
-/*Fondo boton Instagram*/
-#rrss ul li:nth-child(1) a:before {
-  background-image: url("../Assets/Img/Fondos/fondoInstagram.png");
+#rrss ul li a:hover .rrss {
+  transform: rotateY(360deg);
 }
-
-/*Fondo boton whatsapp*/
-#rrss ul li:nth-child(2) a:before {
-  background: #25d366;
-}
-
-/*Copyright*/
-.Copyright {
-  text-align: center;
+#rrss ul li a .rrss {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
 }
 
 /*Mobile*/
