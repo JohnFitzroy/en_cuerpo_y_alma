@@ -701,7 +701,7 @@ input {
 #rrss ul {
   /*Aqui fue lo que modifique para centrar las redes*/
   display: flex;
-  margin: -20px 0 0 15px;
+  margin: -20px 26px 0 0px;
 }
 #rrss ul li {
   list-style: none;
@@ -750,6 +750,8 @@ input {
   z-index: 3;
 }
 
+/*Colors*/
+/*background-color*/
 /*Mobile*/
 @media screen and (min-width: 0px) and (max-width: 576px) {
   /*Queries Productos*/
@@ -764,24 +766,27 @@ input {
     margin-top: 25px;
   }
   .Mediosdepago {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 10px -20px 128px;
+    text-align: center;
+    margin-bottom: -5px;
   }
-  .Imagenesdepago {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 100px -10px 130px;
+  .Efectivo {
+    margin-left: 30px;
+    margin-right: -1px;
+  }
+  .Mercadopago {
+    margin-left: 10px;
   }
   .Nr {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 100px -15px 100px;
+    text-align: center;
   }
-  .queriesUl {
-    display: flex;
-    flex-direction: row;
-    margin: 0 140px 10px 100px;
+  ul li a .iconsSocialmedia {
+    margin-left: -100px;
+  }
+  #rrss ul li:nth-child(1) a, .Instagram {
+    background-image: url("../../Assets/Img/Fondos/fondoInstagram.png");
+  }
+  #rrss ul li:nth-child(2) a, .Whatsapp {
+    background-color: #25d366;
   }
   /*Queries Opiniones*/
   .Opinions {
@@ -790,19 +795,6 @@ input {
   }
   #universalQuerys {
     margin-top: 25px;
-  }
-}
-/*Queries para Desktop*/
-@media screen and (max-width: 1366px) {
-  .Mediosdepago {
-    display: flex;
-    flex-direction: row;
-    margin: 0 50px 0 50px;
-  }
-  .Imagenesdepago {
-    display: flex;
-    flex-direction: row;
-    margin-left: 55px;
   }
 }
 
