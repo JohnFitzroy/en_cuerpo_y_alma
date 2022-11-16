@@ -7,7 +7,10 @@
         margin-left: 55px;
     }
 
-    /*Queries Productos*/
+    /*Nosotros*/
+    
+
+    /*Productos*/
     .h1Productos {
         font-size: 45px;
     }
@@ -21,7 +24,7 @@
         margin-top: 25px;
     }
 
-/*Contacto*/
+    /*Contacto*/
     .h1Contacto {
         font-size: 40px;
     }
@@ -30,8 +33,7 @@
         text-align: center;
     }
 
-    .datosContacto
-/*Footer*/
+    /*Footer*/
     .Mediosdepago {
         text-align: center;
         margin-bottom: -5px;
@@ -61,14 +63,8 @@
     #rrss ul li:nth-child(2) a, .Whatsapp {
         background-color: $AlgalFuel;
     }
-    // .queriesUl {
-    //     display: flex;
-    //     flex-direction: row;
-    //     margin: 0 140px 10px 100px;
-    // }
 
-/*Queries Opiniones*/
-
+/* Opiniones*/
     .Opinions {
         flex-direction: column;
         margin-left: 60px;

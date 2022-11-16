@@ -758,7 +758,8 @@ input {
   #carouselExampleFade {
     margin-left: 55px;
   }
-  /*Queries Productos*/
+  /*Nosotros*/
+  /*Productos*/
   .h1Productos {
     font-size: 45px;
   }
@@ -776,7 +777,8 @@ input {
   .parrContacto, .datosContacto, .h2Contacto, .maps {
     text-align: center;
   }
-  .datosContacto .Mediosdepago {
+  /*Footer*/
+  .Mediosdepago {
     text-align: center;
     margin-bottom: -5px;
   }
@@ -799,7 +801,7 @@ input {
   #rrss ul li:nth-child(2) a, .Whatsapp {
     background-color: #25d366;
   }
-  /*Queries Opiniones*/
+  /* Opiniones*/
   .Opinions {
     flex-direction: column;
     margin-left: 60px;
