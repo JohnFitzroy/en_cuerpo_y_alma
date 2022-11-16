@@ -769,7 +769,14 @@ input {
   .badgePasta, .badgeTortas, .badgeEspeciales {
     margin-top: 25px;
   }
-  .Mediosdepago {
+  /*Contacto*/
+  .h1Contacto {
+    font-size: 40px;
+  }
+  .parrContacto, .datosContacto, .h2Contacto, .maps {
+    text-align: center;
+  }
+  .datosContacto .Mediosdepago {
     text-align: center;
     margin-bottom: -5px;
   }
