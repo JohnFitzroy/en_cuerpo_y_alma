@@ -1,13 +1,27 @@
 @import "../base/mixins";
 @import "../base/variables";
 
+
 .fondoOpiniones {
     background-image: url("../Assets/Img/Fondos/fondo_opiniones.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.Opinions {
+    .tituloOpiniones {
+        /* Fuente*/
+        font-family: 'Oooh Baby', cursive;
+        /*Tamaño fuente*/
+        font-size: 50px;
+        /*Centrar fuente*/
+        text-align: center;
+    }
+    .h2Opiniones {
+        font-family: 'Oooh Baby', cursive;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: -10px;
+    }
+    .Opinions {
     @include flex-evenly-padding;
     .ewChat {
         position:sticky;
@@ -130,6 +144,7 @@
             }
         }
     }
+}
 }
 
 .Valeria {

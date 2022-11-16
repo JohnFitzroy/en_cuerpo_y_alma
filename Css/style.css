@@ -11,15 +11,6 @@ body {
   background-color: white;
 }
 
-h1 {
-  /* Fuente*/
-  font-family: "Oooh Baby", cursive;
-  /*Tamaño fuente*/
-  font-size: 50px;
-  /*Centrar fuente*/
-  text-align: center;
-}
-
 /*Color delos enlaces*/
 a {
   text-decoration: none;
@@ -43,15 +34,6 @@ p, h2, h3, form, label {
 /*Body, h1, a, p, h2, h3,*/ /* Formuladrio(form, label)*/
 body {
   background-color: white;
-}
-
-h1 {
-  /* Fuente*/
-  font-family: "Oooh Baby", cursive;
-  /*Tamaño fuente*/
-  font-size: 50px;
-  /*Centrar fuente*/
-  text-align: center;
 }
 
 /*Color delos enlaces*/
@@ -498,13 +480,27 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.Opinions {
+.fondoOpiniones .tituloOpiniones {
+  /* Fuente*/
+  font-family: "Oooh Baby", cursive;
+  /*Tamaño fuente*/
+  font-size: 50px;
+  /*Centrar fuente*/
+  text-align: center;
+}
+.fondoOpiniones .h2Opiniones {
+  font-family: "Oooh Baby", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: -10px;
+}
+.fondoOpiniones .Opinions {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 25px; /*Espacio entre medido bajo de las badges*/
 }
-.Opinions .ewChat {
+.fondoOpiniones .Opinions .ewChat {
   position: sticky;
   bottom: 15px;
   right: 30px;
@@ -518,7 +514,7 @@ input {
   align-items: flex-end;
   z-index: 11;
 }
-.Opinions .ewChat .ewChatBox {
+.fondoOpiniones .Opinions .ewChat .ewChatBox {
   width: 100%;
   background-color: #eae1da;
   border-radius: 15px;
@@ -526,7 +522,7 @@ input {
   transition: opacity 1000ms;
   flex-direction: column;
 }
-.Opinions .ewChat .ewChatBox .ewChatHeader {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatHeader {
   background-color: #00796a;
   color: white;
   border-radius: 15px 15px 0 0;
@@ -536,15 +532,15 @@ input {
   flex-direction: column;
   justify-content: center;
 }
-.Opinions .ewChat .ewChatBox .ewChatHeader h3 {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatHeader h3 {
   font-size: 18px;
   margin: 3px;
 }
-.Opinions .ewChat .ewChatBox .ewChatHeader p {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatHeader p {
   font-size: 12px;
   margin: 0;
 }
-.Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar {
   left: calc(50% - 32px);
   top: -80px;
   width: 59px;
@@ -554,10 +550,10 @@ input {
   background-color: white;
   display: flex;
 }
-.Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar img {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatHeader .ewChatAvatar img {
   margin: 2px 4px 5px;
 }
-.Opinions .ewChat .ewChatBox .ewChatBubble {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatBubble {
   background-color: white;
   margin: 10px 18px 10px 30px;
   padding: 9px 9px 25px 9px;
@@ -566,7 +562,7 @@ input {
   position: relative;
   transition: opacity 1000ms;
 }
-.Opinions .ewChat .ewChatBox .ewChatBubble:after {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatBubble:after {
   content: "";
   position: absolute;
   left: 0;
@@ -580,18 +576,18 @@ input {
   margin-top: 0;
   margin-left: -15px;
 }
-.Opinions .ewChat .ewChatBox .ewChatBubble p {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatBubble p {
   margin: 0;
   font-size: 14px;
 }
-.Opinions .ewChat .ewChatBox .ewChatBubble span {
+.fondoOpiniones .Opinions .ewChat .ewChatBox .ewChatBubble span {
   position: absolute;
   bottom: 5px;
   right: 9px;
   opacity: 0.5;
   font-size: 11px;
 }
-.Opinions .ewChat .ewChatInput {
+.fondoOpiniones .Opinions .ewChat .ewChatInput {
   display: flex;
   transition: opacity 1000ms;
   width: 100%;
@@ -602,7 +598,7 @@ input {
   border: 1px solid black; /*Quitar despues que coloque fondo*/
   border-width: thin; /*Quitar despues que coloque fondo*/
 }
-.Opinions .ewChat .ewChatInput input {
+.fondoOpiniones .Opinions .ewChat .ewChatInput input {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   background-color: white;
@@ -611,10 +607,10 @@ input {
   width: 100%;
   border: none;
 }
-.Opinions .ewChat .ewChatInput input:focus {
+.fondoOpiniones .Opinions .ewChat .ewChatInput input:focus {
   outline: none;
 }
-.Opinions .ewChat .ewChatInput button {
+.fondoOpiniones .Opinions .ewChat .ewChatInput button {
   border: none;
   background-color: #00796a;
   border-radius: 20px;
