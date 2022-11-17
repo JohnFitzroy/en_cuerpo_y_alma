@@ -5,18 +5,21 @@
     justify-content: space-evenly;
     background-color: $BlondeLace;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-/*Medios de pago*/
-.Mediosdepago {
-    padding: 10px;
-}
-
-.Imagenesdepago {
+    /*Medios de pago*/
+    .Mediosdepago {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .Imagenesdepago {
     display: flex;
+    margin-left: 5px;
     justify-content: space-evenly;
-    margin: 0 50px 10px 10px;
+    }
 }
+
+
+
+
 
 .Copyright {
     margin-top: 70px;

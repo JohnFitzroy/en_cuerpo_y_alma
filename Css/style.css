@@ -648,17 +648,16 @@ p, h2, h3, form, label {
   justify-content: space-evenly;
   background-color: #d8af97;
   font-family: "Josefin Sans", sans-serif;
+  /*Medios de pago*/
 }
-
-/*Medios de pago*/
-.Mediosdepago {
-  padding: 10px;
+#Pie .Mediosdepago {
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
-
-.Imagenesdepago {
+#Pie .Imagenesdepago {
   display: flex;
+  margin-left: 5px;
   justify-content: space-evenly;
-  margin: 0 50px 10px 10px;
 }
 
 .Copyright {
